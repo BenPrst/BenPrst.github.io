@@ -1,99 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  transition: 1s;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Alexandria", sans-serif;
+  width: 100%;
 }
 
 .boxP {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 450px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /***************************HEADER*******************************/
+  /******************************SECTION3***************************/
+  /***************************FOOTER********************************/
 }
-
-.boxTop {
-  overflow: hidden;
-  height: 350px;
-  width: 450px;
-  position: relative;
+.boxP .review {
+  height: 1260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.boxTop .img {
-  height: 350px;
-  width: 450px;
-  background-image: url(india.jfif);
-  background-position: center;
-  background-size: 806px 390px;
-  position: absolute;
-}
-.boxTop .date {
-  background-color: #E44F39;
+.boxP .review .review-title {
   font-size: 20px;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  position: absolute;
+  letter-spacing: 5px;
+  font-family: fraunces;
+  margin-top: 10%;
+}
+.boxP .review .review1 {
+  height: 30%;
   text-align: center;
-  line-height: 20px;
-  border-radius: 50%;
-  right: 0;
-  margin: 10px;
-  z-index: 10;
 }
-.boxTop .photos-btn {
-  background-color: #E44F39;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
+.boxP .review .review2 {
+  height: 30%;
+  text-align: center;
 }
-
-.boxBottom, .boxStats {
+.boxP .review .review3 {
+  height: 30%;
+  text-align: center;
+}
+.boxP .gallery {
+  height: 375px;
   display: flex;
-  flex-flow: column;
-  padding: 10px;
-  margin: 10px;
-  text-align: justify;
+  flex-wrap: wrap;
 }
-.boxBottom h1, .boxStats h1 {
-  padding-top: 20px;
+.boxP .gallery .gallery-pic1 {
+  width: 50%;
+  height: 50%;
+  background-image: url(assets/image-gallery-milkbottles.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.boxBottom h2, .boxStats h2 {
-  color: #E44F39;
-  padding-bottom: 20px;
+.boxP .gallery .gallery-pic2 {
+  width: 50%;
+  height: 50%;
+  background-image: url(assets/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.boxStats {
-  display: flex;
-  flex-direction: row;
+.boxP .gallery .gallery-pic3 {
+  width: 50%;
+  height: 50%;
+  background-image: url(assets/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.boxStats .time {
-  padding: 5px;
+.boxP .gallery .gallery-pic4 {
+  width: 50%;
+  height: 50%;
+  background-image: url(assets/image-gallery-sugarcubes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.boxStats .comments {
-  padding: 5px;
-}
-
-.text {
-  overflow: hidden;
-  height: 0px;
-}
-
-.boxP:hover .text {
-  height: 57px;
-}
-.boxP:hover .img {
-  background-size: 967.2px 468px;
-  transition: 1s;
-  filter: grayscale(50%);
+.boxP .boxBot {
+  height: 350px;
+  background-color: #90D4C6;
 }/*# sourceMappingURL=style.css.map */
